@@ -15,21 +15,20 @@
       </header>
 
       <h2>Overview</h2>
-      <p>Sortie de métro Paris is designed to work offline with a bundled Paris metro exit dataset. With a connection it adds live times (see below), which you can turn off.</p>
+      <p>Sortie de métro Paris is designed to work offline with a bundled Paris metro exit dataset. With a connection it adds live times and street maps (see below).</p>
       <p>The guide does not require an account, contacts, photos, microphone access or camera access. Location is requested only if you choose &quot;My position&quot;. The advertising ID is used only if you accept ad measurement (see below).</p>
 
       <h2>Position, addresses and shared trips</h2>
-      <p>If you choose &quot;My position&quot;, the app asks for your location; Android lets you grant a precise or an approximate position. It is read once and used on your device to find the nearest stations and entrances. It is never stored, and is sent only as a trip's departure point for &quot;Live times&quot; and &quot;Walking times along the streets&quot; (see below).</p>
+      <p>If you choose &quot;My position&quot;, the app asks for your location; Android lets you grant a precise or an approximate position. It is read once and used on your device to find the nearest stations and entrances. It is never stored, and is sent only as a trip's departure point to the app's trip planner (see below).</p>
       <p>Address search works offline with the bundled Base Adresse Nationale. When the device is online and you type at least three letters, the typed text is also sent to IGN's public geocoding service (Géoplateforme) to suggest places (monuments, parks, museums). Nothing else is sent with it.</p>
       <p>If you share a Google Maps route to the app, it opens the received link with Google to read the departure and arrival places, as your browser would.</p>
-      <p>&quot;Walking times along the streets&quot; is off unless you turn it on. When it is on, the start and end points of the walks of the trip shown (your position or the places you chose, and the station accesses) are sent to IGN's public route service (Géoplateforme) to measure those walks. Nothing else is sent with them.</p>
-      <p>&quot;Live times&quot; is on unless you turn it off, in the trip screen. When a trip is planned while the device is online, its departure and arrival points (your position rounded to about 10 m if you chose &quot;My position&quot;, or the places you chose) and the time asked are sent to the app's trip planner server, reached through Cloudflare, to compute trips with Île-de-France Mobilités' live traffic data. They are used only to answer and are neither stored nor logged; nothing else is sent with them (no account, no identifier). While a trip is shown, the app also asks this server for the current disruptions of its lines: those requests carry only line numbers.</p>
+      <p>When a trip is planned while the device is online, its departure and arrival points (your position rounded to about 10 m if you chose &quot;My position&quot;, or the places you chose) and the time asked are sent to the app's trip planner server, reached through Cloudflare, to compute trips with Île-de-France Mobilités' live traffic data. They are used only to answer and are neither stored nor logged; nothing else is sent with them (no account, no identifier). While a trip is shown, the app also asks this server for the current disruptions of its lines: those requests carry only line numbers.</p>
       <p>About once a week the app downloads the latest timetable from its own data service hosted by Cloudflare, which also gives the current traffic disruptions when the trip planner does not answer. These requests carry no personal data. Like any server, the trip planner and Cloudflare see your device's IP address.</p>
 
       <h2>Data used by the app</h2>
       <p>The app stores your current selections, favorite trips and recent trips on your device. This data stays on the device and is not sent to us.</p>
       <p>The bundled dataset includes public transport and station-exit information. It is not personal user data.</p>
-      <p>If you open an exit on the map, its coordinates are passed to the map app you use (for example Google Maps), which applies its own privacy policy.</p>
+      <p>When a trip map is shown, the map images of the area shown are downloaded from OpenFreeMap (map data © OpenStreetMap contributors). Like any server, it sees your device&#39;s IP address and the area requested. Your position appears on the map only if you allow it, and stays on your phone: it is not sent with these requests.</p>
 
       <h2>Optional ad measurement (Meta)</h2>
       <p>We promote the app on Facebook and Instagram. On Android, the Meta SDK remains inactive until you accept the consent prompt. Refusing does not restrict any guide or Premium feature. You can change your choice at any time from “Ads” (“Publicité”) at the bottom of the home screen.</p>
